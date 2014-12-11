@@ -1,0 +1,7 @@
+<resources>
+    <string name="home_menu_text">Home</string>
+    <string name="map_menu_text">Map</string>
+    <string name="friends_menu_text">Friends</string>
+    <string name="profile_menu_text">Profile</string>
+    <string name="message_menu_text">Message</string>
+</resources>

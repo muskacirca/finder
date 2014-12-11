@@ -1,0 +1,16 @@
+<resources>
+    <dimen name="actionbar_height">40dp</dimen>
+
+
+    <!-- Padding et Margin -->
+    <dimen name="border_tiny">5dp</dimen>
+    <dimen name="border_small">10dp</dimen>
+    <dimen name="border_medium">20dp</dimen>
+    <dimen name="border_large">30dp</dimen>
+
+    <dimen name="textSize_small">12dp</dimen>
+    <dimen name="textSize_medium">14dp</dimen>
+    <dimen name="textSize_large">16dp</dimen>
+    <dimen name="textSize_title">24dp</dimen>
+
+</resources>

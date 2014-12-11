@@ -1,0 +1,5 @@
+command :
+heroku create <app_name>
+heroku deploy:war --war <path_to_war> --app <app_name>
+
+

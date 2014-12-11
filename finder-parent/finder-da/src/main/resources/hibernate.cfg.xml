@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+
+<!--        <property name="hibernate.dialect"> org.hibernate.dialect.PostgreSQL9Dialect</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://ec2-54-204-40-96.compute-1.amazonaws.com:5432/ddquhkh97ilv6t?autoReconnect=true&amp;interactiveClient=true&amp;ssl=true&amp;sslfactory=org.postgresql.ssl.NonValidatingFactory</property>
+        <property name="hibernate.connection.username">xhhaueofqbvraj</property>
+        <property name="hibernate.connection.password">teYKEMp-7AYi2-2ZzT-YK4waG_</property>
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>-->
+
+        <!--MYSQL CONNECTION-->
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.password">d9ba94f9</property>
+        <property name="hibernate.connection.url">jdbc:mysql://us-cdbr-iron-east-01.cleardb.net/heroku_a075ccc53229cbe?reconnect=true</property>
+        <property name="hibernate.connection.username">bdd0639320a70d</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+
+<!--        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.password"></property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/finder</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>-->
+
+        <!-- JDBC connection pool (use the built-in) -->
+        <property name="connection.pool_size">1</property>
+
+        <!-- Enable Hibernate's automatic session context management -->
+        <property name="current_session_context_class">thread</property>
+
+        <!-- Disable the second-level cache  -->
+        <!--property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property-->
+
+        <!-- Echo all executed SQL to stdout -->
+        <property name="show_sql">false</property>
+
+        <mapping class="com.finder.da.model.UserDAO"/>
+
+    </session-factory>
+</hibernate-configuration>

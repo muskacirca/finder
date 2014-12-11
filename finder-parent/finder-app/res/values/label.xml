@@ -1,0 +1,28 @@
+<resources>
+
+    <!-- Titres -->
+    <string name="title_signup">Inscrivez-vous</string>
+    <string name="title_home">Bienvenue dans le Finder</string>
+    <string name="title_registered">Mon espace</string>
+
+    <!-- Textes -->
+    <string name="text_welcomeMessage">Vous pouvez vous identifiez ou créer un compte</string>
+
+    <string name="provider_enabled">New provider enabled : %1$s</string>
+    <string name="provider_disabled">Provider %1$s is disabled</string>
+    <string name="new_location">New Location : Latitude = %1$s, Longitude = %2$s, Altitude = %3$s avec une précision de
+        %4$s mètres
+    </string>
+
+    <!-- Labels des edittext -->
+    <string name="form_login">Nom d\'utilisateur</string>
+    <string name="form_password">Mot de passe</string>
+    <string name="form_confirm_password">Confirmez votre mot de passe</string>
+    <string name="form_email">Email</string>
+
+    <!-- Labels des boutons -->
+    <string name="button_signup">Inscription</string>
+    <string name="button_connect">Connexion</string>
+
+
+</resources>

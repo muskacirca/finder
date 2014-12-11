@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/layout_home_welcome"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+        <TextView android:id="@+id/welcomeTitle"
+                  android:layout_height="wrap_content"
+                  android:layout_width="fill_parent"
+                  android:layout_marginTop="10dp"
+                  android:layout_marginBottom="10dp"
+                  android:textSize="@dimen/textSize_title"
+                  android:gravity="center"
+                  android:text="@string/title_home"/>
+
+        <TextView android:id="@+id/welcomeText"
+                  android:layout_height="wrap_content"
+                  android:layout_width="fill_parent"
+                  android:textSize="10dp"
+                  android:layout_marginBottom="10dp"
+                  android:layout_below="@id/welcomeTitle"
+                  android:gravity="center"
+                  android:text="@string/text_welcomeMessage"/>
+
+        <Button android:id="@+id/button_home_signup"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="@string/button_connect"
+                android:layout_margin="10dp"
+                android:layout_below="@id/welcomeText"
+                android:layout_centerInParent="true"
+                android:gravity="center"/>
+
+        <Button android:id="@+id/button_home_register"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="@string/button_signup"
+                android:gravity="center"
+                android:layout_below="@id/button_home_signup"
+                android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/layout_home_register"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+        <TextView android:id="@+id/register_title"
+                  android:layout_height="wrap_content"
+                  android:layout_width="fill_parent"
+                  android:gravity="center"
+                  android:text="@string/title_signup"
+                  android:layout_marginBottom="@dimen/border_medium"
+                  android:textSize="@dimen/textSize_title"/>
+
+        <EditText android:id="@+id/register_field_login"
+                  android:layout_below="@id/register_title"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:hint="@string/form_login"
+                  android:textSize="@dimen/textSize_medium"
+                  android:inputType="textNoSuggestions"
+                  android:layout_margin="@dimen/border_tiny"
+                  android:lines="1"/>
+
+        <EditText android:id="@+id/register_field_password"
+                  android:layout_below="@id/register_field_login"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:hint="@string/form_password"
+                  android:textSize="@dimen/textSize_medium"
+                  android:inputType="textPassword"
+                  android:layout_margin="@dimen/border_tiny"
+                  android:lines="1"/>
+
+        <EditText android:id="@+id/register_field_confirmPassword"
+                  android:layout_below="@id/register_field_password"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:hint="@string/form_confirm_password"
+                  android:textSize="@dimen/textSize_medium"
+                  android:inputType="textPassword"
+                  android:layout_margin="@dimen/border_tiny"
+                  android:lines="1"/>
+
+        <EditText android:id="@+id/register_field_email"
+                  android:layout_below="@id/register_field_confirmPassword"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:hint="@string/form_email"
+                  android:textSize="@dimen/textSize_medium"
+                  android:inputType="textEmailAddress"
+                  android:layout_margin="@dimen/border_tiny"
+                  android:lines="1"/>
+
+        <Button android:id="@+id/register_button_submit"
+                android:layout_below="@id/register_field_email"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="@string/button_signup"
+                android:layout_margin="@dimen/border_medium"
+                android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/layout_home_signup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+        <TextView android:id="@+id/signup_title"
+                  android:layout_height="wrap_content"
+                  android:layout_width="fill_parent"
+                  android:gravity="center"
+                  android:text="@string/title_signup"
+                  android:layout_marginBottom="@dimen/border_medium"
+                  android:textSize="@dimen/textSize_title"/>
+
+        <EditText android:id="@+id/signup_field_login"
+                  android:layout_below="@id/signup_title"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:hint="@string/form_login"
+                  android:textSize="@dimen/textSize_medium"
+                  android:inputType="textNoSuggestions"
+                  android:layout_margin="@dimen/border_tiny"
+                  android:lines="1"/>
+
+        <EditText android:id="@+id/signup_field_password"
+                  android:layout_below="@id/signup_field_login"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:hint="@string/form_password"
+                  android:textSize="@dimen/textSize_medium"
+                  android:inputType="textPassword"
+                  android:layout_margin="@dimen/border_tiny"
+                  android:lines="1"/>
+
+        <Button android:id="@+id/signup_button_submit"
+                android:layout_below="@id/signup_field_password"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="@string/button_connect"
+                android:layout_margin="@dimen/border_medium"
+                android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
+
+
+
+

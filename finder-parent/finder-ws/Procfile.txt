@@ -1,0 +1,1 @@
+web: sh finder-ws/target/bin/webapp
